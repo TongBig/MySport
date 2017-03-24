@@ -1,0 +1,23 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.7)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - SDAutoLayout (2.1.7)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - MagicalRecord
+  - SDAutoLayout
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: 68bb3c1264f2f7710acaae02353b72934692898e
+
+COCOAPODS: 1.1.1
