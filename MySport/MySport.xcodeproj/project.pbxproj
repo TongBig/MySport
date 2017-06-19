@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D05C2CE1EC552710094F9E7 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D05C2CD1EC552710094F9E7 /* RegisterViewModel.swift */; };
+		0D05C2D01EC55FC60094F9E7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D05C2CF1EC55FC60094F9E7 /* Utils.swift */; };
 		0D0C29B21E82442B00D4E191 /* MySport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29AE1E82442B00D4E191 /* MySport.xcdatamodeld */; };
-		0D0C29B71E82447900D4E191 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29B51E82447900D4E191 /* User+CoreDataClass.swift */; };
-		0D0C29B81E82447900D4E191 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29B61E82447900D4E191 /* User+CoreDataProperties.swift */; };
 		0D0C29BA1E8245F400D4E191 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29B91E8245F400D4E191 /* CoreDataManger.swift */; };
 		0D0C29C01E825EEE00D4E191 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29BF1E825EEE00D4E191 /* LoginView.swift */; };
 		0D0C29C21E825FEF00D4E191 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C29C11E825FEF00D4E191 /* LoginViewController.swift */; };
+		0D2BCBBC1EC0068B00FE0429 /* NSURLRequest+decide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BCBBB1EC0068B00FE0429 /* NSURLRequest+decide.swift */; };
+		0D3B0B7C1ECACD3E00FE1274 /* MyUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B0B7B1ECACD3E00FE1274 /* MyUserDefault.swift */; };
+		0D6002991E8C942F00BBE769 /* XDDistCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6002981E8C942F00BBE769 /* XDDistCache.swift */; };
+		0D60029B1E8C944B00BBE769 /* XDMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60029A1E8C944B00BBE769 /* XDMemoryCache.swift */; };
+		0D6570651E8A4CF9001F4875 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6570611E8A4CF9001F4875 /* Location+CoreDataClass.swift */; };
+		0D6570661E8A4CF9001F4875 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6570621E8A4CF9001F4875 /* Location+CoreDataProperties.swift */; };
+		0D6570671E8A4CF9001F4875 /* Run+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6570631E8A4CF9001F4875 /* Run+CoreDataClass.swift */; };
+		0D6570681E8A4CF9001F4875 /* Run+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6570641E8A4CF9001F4875 /* Run+CoreDataProperties.swift */; };
+		0D6655621EC2B0940080F96D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6655611EC2B0940080F96D /* Config.swift */; };
 		0DC71E0F1E810E0E00BB1B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC71E0E1E810E0E00BB1B00 /* AppDelegate.swift */; };
 		0DC71E111E810E0E00BB1B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC71E101E810E0E00BB1B00 /* ViewController.swift */; };
 		0DC71E141E810E0E00BB1B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC71E121E810E0E00BB1B00 /* Main.storyboard */; };
@@ -22,7 +31,15 @@
 		0DCB57EB1E83676100348A05 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB57EA1E83676100348A05 /* RegisterViewController.swift */; };
 		0DCB57ED1E83685B00348A05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB57EC1E83685B00348A05 /* MainViewController.swift */; };
 		0DCB57EF1E8370D300348A05 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB57EE1E8370D300348A05 /* RegisterView.swift */; };
+		0DDAA1C61E8B4ADD007A54E3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA1C51E8B4ADD007A54E3 /* UserModel.swift */; };
+		0DDAA1C91E8B5200007A54E3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA1C81E8B5200007A54E3 /* LoginViewModel.swift */; };
+		0DDAA1CB1E8B819D007A54E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA1CA1E8B819D007A54E3 /* BaseViewController.swift */; };
+		0DDCF36C1EA5E43B00DBF349 /* NSTimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDCF36B1EA5E43B00DBF349 /* NSTimerEx.swift */; };
+		0DDCF36E1EA5E44A00DBF349 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDCF36D1EA5E44A00DBF349 /* BallView.swift */; };
+		0DE97B221EC9A8DB005DA6DB /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE97B211EC9A8DB005DA6DB /* Macros.swift */; };
+		0DE97B241EC9AF5C005DA6DB /* UserStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE97B231EC9AF5C005DA6DB /* UserStatusManager.swift */; };
 		0DFA02DC1E84E7A90048C4C5 /* HeadAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA02DB1E84E7A90048C4C5 /* HeadAnimationView.swift */; };
+		0DFF83221EA7674900CE89BA /* XDNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFF83211EA7674900CE89BA /* XDNetworking.swift */; };
 		64891AF8AD8CE49C269B5B94 /* Pods_MySport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CFBFCF36477F6F3536EBF3 /* Pods_MySport.framework */; };
 		7205F2786EB0F887CEC1282B /* Pods_MySportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D5A18526A58DD546D895DC /* Pods_MySportTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,12 +56,22 @@
 
 /* Begin PBXFileReference section */
 		056844B677202DA99C1AEFFD /* Pods-MySport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySport/Pods-MySport.debug.xcconfig"; sourceTree = "<group>"; };
+		0D05C2CD1EC552710094F9E7 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		0D05C2CF1EC55FC60094F9E7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0D05C2D11EC5861F0094F9E7 /* MySport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySport-Bridging-Header.h"; sourceTree = "<group>"; };
 		0D0C29AF1E82442B00D4E191 /* MySport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySport.xcdatamodel; sourceTree = "<group>"; };
-		0D0C29B51E82447900D4E191 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0D0C29B61E82447900D4E191 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0D0C29B91E8245F400D4E191 /* CoreDataManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		0D0C29BF1E825EEE00D4E191 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0D0C29C11E825FEF00D4E191 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0D2BCBBB1EC0068B00FE0429 /* NSURLRequest+decide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLRequest+decide.swift"; sourceTree = "<group>"; };
+		0D3B0B7B1ECACD3E00FE1274 /* MyUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUserDefault.swift; sourceTree = "<group>"; };
+		0D6002981E8C942F00BBE769 /* XDDistCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDDistCache.swift; sourceTree = "<group>"; };
+		0D60029A1E8C944B00BBE769 /* XDMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDMemoryCache.swift; sourceTree = "<group>"; };
+		0D6570611E8A4CF9001F4875 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D6570621E8A4CF9001F4875 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D6570631E8A4CF9001F4875 /* Run+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Run+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D6570641E8A4CF9001F4875 /* Run+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Run+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D6655611EC2B0940080F96D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		0DC71E0B1E810E0E00BB1B00 /* MySport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC71E0E1E810E0E00BB1B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC71E101E810E0E00BB1B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +85,15 @@
 		0DCB57EA1E83676100348A05 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0DCB57EC1E83685B00348A05 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0DCB57EE1E8370D300348A05 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		0DDAA1C51E8B4ADD007A54E3 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0DDAA1C81E8B5200007A54E3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0DDAA1CA1E8B819D007A54E3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0DDCF36B1EA5E43B00DBF349 /* NSTimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerEx.swift; sourceTree = "<group>"; };
+		0DDCF36D1EA5E44A00DBF349 /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		0DE97B211EC9A8DB005DA6DB /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		0DE97B231EC9AF5C005DA6DB /* UserStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStatusManager.swift; sourceTree = "<group>"; };
 		0DFA02DB1E84E7A90048C4C5 /* HeadAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadAnimationView.swift; sourceTree = "<group>"; };
+		0DFF83211EA7674900CE89BA /* XDNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDNetworking.swift; sourceTree = "<group>"; };
 		82D5A18526A58DD546D895DC /* Pods_MySportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8337A34B44BFA3E05161E79A /* Pods-MySportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySportTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySportTests/Pods-MySportTests.debug.xcconfig"; sourceTree = "<group>"; };
 		97CFBFCF36477F6F3536EBF3 /* Pods_MySport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,10 +124,13 @@
 		0D0C29AD1E82442B00D4E191 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0D0C29B51E82447900D4E191 /* User+CoreDataClass.swift */,
-				0D0C29B61E82447900D4E191 /* User+CoreDataProperties.swift */,
+				0D6570611E8A4CF9001F4875 /* Location+CoreDataClass.swift */,
+				0D6570621E8A4CF9001F4875 /* Location+CoreDataProperties.swift */,
+				0D6570631E8A4CF9001F4875 /* Run+CoreDataClass.swift */,
+				0D6570641E8A4CF9001F4875 /* Run+CoreDataProperties.swift */,
 				0D0C29AE1E82442B00D4E191 /* MySport.xcdatamodeld */,
 				0D0C29B91E8245F400D4E191 /* CoreDataManger.swift */,
+				0DDAA1C51E8B4ADD007A54E3 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +141,7 @@
 				0D0C29C11E825FEF00D4E191 /* LoginViewController.swift */,
 				0DCB57EA1E83676100348A05 /* RegisterViewController.swift */,
 				0DCB57EC1E83685B00348A05 /* MainViewController.swift */,
+				0DDAA1CA1E8B819D007A54E3 /* BaseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -110,11 +149,31 @@
 		0D0C29BE1E825ED200D4E191 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0DDCF36D1EA5E44A00DBF349 /* BallView.swift */,
 				0D0C29BF1E825EEE00D4E191 /* LoginView.swift */,
 				0DCB57EE1E8370D300348A05 /* RegisterView.swift */,
 				0DFA02DB1E84E7A90048C4C5 /* HeadAnimationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0D6002971E8C940900BBE769 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				0D6002981E8C942F00BBE769 /* XDDistCache.swift */,
+				0D60029A1E8C944B00BBE769 /* XDMemoryCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		0D6655601EC2AD8E0080F96D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D6655611EC2B0940080F96D /* Config.swift */,
+				0D05C2D11EC5861F0094F9E7 /* MySport-Bridging-Header.h */,
+				0DE97B211EC9A8DB005DA6DB /* Macros.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		0DC71E021E810E0E00BB1B00 = {
@@ -140,6 +199,10 @@
 		0DC71E0D1E810E0E00BB1B00 /* MySport */ = {
 			isa = PBXGroup;
 			children = (
+				0D6655601EC2AD8E0080F96D /* Config */,
+				0DDCF36A1EA5E43100DBF349 /* Common */,
+				0DDAA1CC1E8BB5E9007A54E3 /* RunKit */,
+				0DDAA1C71E8B51DB007A54E3 /* ViewModel */,
 				0D0C29BE1E825ED200D4E191 /* View */,
 				0D0C29BD1E825EC800D4E191 /* ViewController */,
 				0D0C29AD1E82442B00D4E191 /* Model */,
@@ -160,6 +223,76 @@
 				0DC71E281E810E0E00BB1B00 /* Info.plist */,
 			);
 			path = MySportTests;
+			sourceTree = "<group>";
+		};
+		0DDAA1C71E8B51DB007A54E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0DDAA1C81E8B5200007A54E3 /* LoginViewModel.swift */,
+				0D05C2CD1EC552710094F9E7 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DDAA1CC1E8BB5E9007A54E3 /* RunKit */ = {
+			isa = PBXGroup;
+			children = (
+				0D6002971E8C940900BBE769 /* Cache */,
+				0DDAA1CE1E8BB79A007A54E3 /* Utils */,
+				0DDAA1CF1E8BB7B6007A54E3 /* XDNetworking */,
+				0DDAA1CD1E8BB783007A54E3 /* Category */,
+			);
+			path = RunKit;
+			sourceTree = "<group>";
+		};
+		0DDAA1CD1E8BB783007A54E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0DDAA1CE1E8BB79A007A54E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D05C2CF1EC55FC60094F9E7 /* Utils.swift */,
+				0D3B0B7B1ECACD3E00FE1274 /* MyUserDefault.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0DDAA1CF1E8BB7B6007A54E3 /* XDNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0DDAA1D01E8BB7B6007A54E3 /* Cache */,
+				0DDAA1D11E8BB7B6007A54E3 /* Category */,
+			);
+			path = XDNetworking;
+			sourceTree = "<group>";
+		};
+		0DDAA1D01E8BB7B6007A54E3 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		0DDAA1D11E8BB7B6007A54E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0DDCF36A1EA5E43100DBF349 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0DDCF36B1EA5E43B00DBF349 /* NSTimerEx.swift */,
+				0DFF83211EA7674900CE89BA /* XDNetworking.swift */,
+				0D2BCBBB1EC0068B00FE0429 /* NSURLRequest+decide.swift */,
+				0DE97B231EC9AF5C005DA6DB /* UserStatusManager.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		68DFAC4429FFC414DED076EA /* Frameworks */ = {
@@ -385,17 +518,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE97B241EC9AF5C005DA6DB /* UserStatusManager.swift in Sources */,
+				0D6002991E8C942F00BBE769 /* XDDistCache.swift in Sources */,
+				0D05C2CE1EC552710094F9E7 /* RegisterViewModel.swift in Sources */,
 				0DCB57EF1E8370D300348A05 /* RegisterView.swift in Sources */,
 				0DCB57EB1E83676100348A05 /* RegisterViewController.swift in Sources */,
 				0DFA02DC1E84E7A90048C4C5 /* HeadAnimationView.swift in Sources */,
+				0D05C2D01EC55FC60094F9E7 /* Utils.swift in Sources */,
 				0D0C29B21E82442B00D4E191 /* MySport.xcdatamodeld in Sources */,
+				0D6655621EC2B0940080F96D /* Config.swift in Sources */,
+				0DDAA1C91E8B5200007A54E3 /* LoginViewModel.swift in Sources */,
+				0DE97B221EC9A8DB005DA6DB /* Macros.swift in Sources */,
+				0D60029B1E8C944B00BBE769 /* XDMemoryCache.swift in Sources */,
 				0D0C29C01E825EEE00D4E191 /* LoginView.swift in Sources */,
+				0D6570681E8A4CF9001F4875 /* Run+CoreDataProperties.swift in Sources */,
+				0DDCF36E1EA5E44A00DBF349 /* BallView.swift in Sources */,
+				0D3B0B7C1ECACD3E00FE1274 /* MyUserDefault.swift in Sources */,
+				0DDAA1CB1E8B819D007A54E3 /* BaseViewController.swift in Sources */,
+				0DFF83221EA7674900CE89BA /* XDNetworking.swift in Sources */,
 				0DC71E111E810E0E00BB1B00 /* ViewController.swift in Sources */,
-				0D0C29B71E82447900D4E191 /* User+CoreDataClass.swift in Sources */,
 				0D0C29C21E825FEF00D4E191 /* LoginViewController.swift in Sources */,
-				0D0C29B81E82447900D4E191 /* User+CoreDataProperties.swift in Sources */,
+				0D6570671E8A4CF9001F4875 /* Run+CoreDataClass.swift in Sources */,
+				0DDCF36C1EA5E43B00DBF349 /* NSTimerEx.swift in Sources */,
 				0D0C29BA1E8245F400D4E191 /* CoreDataManger.swift in Sources */,
+				0D6570661E8A4CF9001F4875 /* Location+CoreDataProperties.swift in Sources */,
 				0DC71E0F1E810E0E00BB1B00 /* AppDelegate.swift in Sources */,
+				0D6570651E8A4CF9001F4875 /* Location+CoreDataClass.swift in Sources */,
+				0DDAA1C61E8B4ADD007A54E3 /* UserModel.swift in Sources */,
+				0D2BCBBC1EC0068B00FE0429 /* NSURLRequest+decide.swift in Sources */,
 				0DCB57ED1E83685B00348A05 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,11 +685,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DVTKRQPCT9;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MySport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TongBig.MySport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "./MySport/Config/MySport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -550,11 +704,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DVTKRQPCT9;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MySport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TongBig.MySport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "./MySport/Config/MySport-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -563,7 +721,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8337A34B44BFA3E05161E79A /* Pods-MySportTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MySportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -578,7 +735,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3C29F25F31780675A2ACBDC /* Pods-MySportTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MySportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

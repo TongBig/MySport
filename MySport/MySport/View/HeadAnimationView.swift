@@ -15,7 +15,7 @@ class HeadAnimationView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let dotImage = UIImage(named: "animation1")
-        let dotImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: (dotImage?.size.width)!, height: (dotImage?.size.height)!))
+        let dotImageView = UIImageView(frame: CGRect(x: (self.width - (dotImage?.size.width)!) / 2, y: (self.height - (dotImage?.size.height)!) / 2, width: (dotImage?.size.width)!, height: (dotImage?.size.height)!))
         dotImageView.image = dotImage
         self.addSubview(dotImageView)
         self.addAnmination(imageView: dotImageView)

@@ -8,43 +8,46 @@
 
 import UIKit
 import MagicalRecord
-typealias completionClosure = ((_ completedOperation: AnyObject?, _ error: NSError?)->())?
-
-class CoreDataManger: NSObject {
-
-    class func addUser(dic: NSDictionary, completionHandler: completionClosure){
-        MagicalRecord.save({ (localContext) in
-
-            let user = User.mr_find(byAttribute: "phoneNum", withValue: dic["phoneNum"]!)
-            if user?.count == 0  {
-                let newUser = User.mr_createEntity(in: localContext)
-                newUser?.phoneNum = dic.object(forKey: "phoneNum") as! String?
-                newUser?.name = dic.object(forKey: "name") as! String?
-                newUser?.passWord = dic.object(forKey: "passWord") as! String?
-            }
 
 
-        }) { (contextDidSave, error) in
-            if((error) != nil){
+var DBNAME: String = "CoolRun"
 
-                completionHandler!(nil, error as NSError?)
+final class CoreDataManger: NSObject {
 
-            }else{
 
-                completionHandler!(contextDidSave as AnyObject?, nil)
-            }
+    /**
+     *  全局管理对象
+     *
+     *
+     */
+    static let manager = CoreDataManger()
 
-        }
 
+
+    private override init(){
 
     }
 
-    class func  deleteEntity(){
 
+    /**
+     *  切换数据库，如果没有就新建
+     *
+     *  @param name 数据库名字
+     */
 
-
-
+    func switchToDatabase(name: String) {
+        DBNAME = name
+        MagicalRecord.setupCoreDataStack(withStoreNamed: DBNAME)
     }
 
+    /**
+     *  切换到临时数据库
+     */
+
+    func switchToTempDatabase() {
+
+        MagicalRecord.setupCoreDataStack(withStoreNamed: DBNAME)
+
+    }
 
 }

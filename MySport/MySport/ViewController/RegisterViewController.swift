@@ -50,33 +50,33 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
 
     func tapBtnAction(button: UIButton) {
 
-        let user = User.mr_find(byAttribute: "phoneNum", withValue: phoneNum!)
-        if user?.count == 0{
-            phoneNum = registerView?.phoneNumTextField?.text
-            passWord = registerView?.passWordTextField?.text
-
-            let dic:NSMutableDictionary = [:]
-            dic.setObject(phoneNum!, forKey: "phoneNum" as NSCopying)
-            dic.setObject(passWord!, forKey: "passWord" as NSCopying)
-            dic.setObject("我的", forKey:"name" as NSCopying)
-            CoreDataManger.addUser(dic: dic, completionHandler: { (contextDidSave, error) in
-                if error == nil{
-
-                    SVProgressHUD.showSuccess(withStatus: "注册成功")
-                    self.navigationController?.dismiss(animated: true, completion: nil)
-
-                }
-                
-            })
-
-
-
-        }else{
-
-            print("用户存在！")
-
-
-        }
+//        let user = User.mr_find(byAttribute: "phoneNum", withValue: phoneNum!)
+//        if user?.count == 0{
+//            phoneNum = registerView?.phoneNumTextField?.text
+//            passWord = registerView?.passWordTextField?.text
+//
+//            let dic:NSMutableDictionary = [:]
+//            dic.setObject(phoneNum!, forKey: "phoneNum" as NSCopying)
+//            dic.setObject(passWord!, forKey: "passWord" as NSCopying)
+//            dic.setObject("我的", forKey:"name" as NSCopying)
+//            CoreDataManger.addUser(dic: dic, completionHandler: { (contextDidSave, error) in
+//                if error == nil{
+//
+//                    SVProgressHUD.showSuccess(withStatus: "注册成功")
+//                    self.navigationController?.dismiss(animated: true, completion: nil)
+//
+//                }
+//                
+//            })
+//
+//
+//
+//        }else{
+//
+//            print("用户存在！")
+//
+//
+//        }
 
 
 
