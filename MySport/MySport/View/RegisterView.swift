@@ -19,24 +19,29 @@ class RegisterView: UIView {
     var phoneNumTextField: UITextField?
     var passWordTextField: UITextField?
     var rePassWordTextField: UITextField?
+    var userNameTextField: UITextField?
+
 
 
     override func layoutSubviews() {
         phoneNumTextField = UITextField(frame: .zero)
         passWordTextField = UITextField(frame: .zero)
         rePassWordTextField = UITextField(frame: .zero)
+        userNameTextField = UITextField(frame: .zero)
 
 
         let doneBtn = UIButton(frame: .zero)
         let phoneNumBottomLine = UIView(frame: .zero)
         let passWordBottomLine = UIView(frame: .zero)
         let rePassWordBottomLine = UIView(frame: .zero)
+        let userNameBottomLine = UIView(frame: .zero)
 
 
         phoneNumTextField?.addSubview(phoneNumBottomLine)
         passWordTextField?.addSubview(passWordBottomLine)
         rePassWordTextField?.addSubview(rePassWordBottomLine)
-        self.sd_addSubviews([phoneNumTextField!, passWordTextField!, rePassWordTextField!,doneBtn])
+        userNameTextField?.addSubview(userNameBottomLine)
+        self.sd_addSubviews([phoneNumTextField!, passWordTextField!, rePassWordTextField!,userNameTextField!,doneBtn])
 
         phoneNumTextField?.frame = CGRect(x: 0, y: 0, width: self.width, height: 49)
         phoneNumTextField?.textAlignment = .center
@@ -66,9 +71,19 @@ class RegisterView: UIView {
         rePassWordBottomLine.frame = CGRect(x: 0, y: (rePassWordTextField?.height)!, width: self.width, height: 1);
         rePassWordBottomLine.backgroundColor = UIColor.lightGray
 
+        userNameTextField?.frame = CGRect(x: 0, y: (rePassWordTextField?.bottom)! + 30, width: self.width, height: 49)
+        userNameTextField?.tag = 104
+        userNameTextField?.textAlignment = .center
+        userNameTextField?.isSecureTextEntry = true
+        userNameTextField?.placeholder = "姓名"
 
-        doneBtn.frame = CGRect(x: (self.width - 300) / 2, y: (rePassWordTextField?.bottom)! + 50, width: 300, height: 49)
-        doneBtn.tag = 104
+        userNameBottomLine.frame = CGRect(x: 0, y: (userNameTextField?.height)!, width: self.width, height: 1);
+        userNameBottomLine.backgroundColor = UIColor.lightGray
+
+
+
+        doneBtn.frame = CGRect(x: (self.width - 300) / 2, y: (userNameTextField?.bottom)! + 50, width: 300, height: 49)
+        doneBtn.tag = 105
         doneBtn.setTitle("确定", for: .normal)
         doneBtn.setTitleColor(UIColor.red
             , for: .normal)

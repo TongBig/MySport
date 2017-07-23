@@ -45,14 +45,14 @@ class LoginViewController: UIViewController, loginViewDelegte, UITextFieldDelega
         headAnimationView = HeadAnimationView(frame: CGRect(x: 0, y: 64, width: self.view.width, height: 200))
 
         //let bounceDuration: CFTimeInterval = 0.8
-        let ballSize = 28//32,
-        let ballMoveTimingFunc = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        let moveUpDuration = 0.2
-        let moveUpDist = 32 * 1.5
-        let color: UIColor! = UIColor.white
+//        let ballSize = 28//32,
+//        let ballMoveTimingFunc = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+//        let moveUpDuration = 0.2
+//        let moveUpDist = 32 * 1.5
+//        let color: UIColor! = UIColor.white
 
-        ballView = BallView(frame: CGRect(x: 100, y: 100, width: 80, height: 80), circleSize: CGFloat(ballSize), timingFunc: ballMoveTimingFunc, moveUpDuration: moveUpDuration, moveUpDist: CGFloat(moveUpDist), color: color)
-        ballView?.startAnimation()
+//        ballView = BallView(frame: CGRect(x: 100, y: 100, width: 80, height: 80), circleSize: CGFloat(ballSize), timingFunc: ballMoveTimingFunc, moveUpDuration: moveUpDuration, moveUpDist: CGFloat(moveUpDist), color: color)
+//        ballView?.startAnimation()
 
         loginView = LoginView(frame: CGRect(x: 0, y: (headAnimationView?.bottom)!, width: self.view.width, height: 300))
         loginView?.delegate = self
@@ -60,7 +60,7 @@ class LoginViewController: UIViewController, loginViewDelegte, UITextFieldDelega
         loginView?.passWordTextField?.delegate = self
 
         self.view.addSubview(headAnimationView!)
-        self.view.addSubview(ballView!)
+//        self.view.addSubview(ballView!)
         self.view.addSubview(loginView!)
 
 

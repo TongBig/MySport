@@ -14,11 +14,14 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
 
     var phoneNum: String?
     var passWord: String?
+    var userName: String?
+
 
 
     var registerView: RegisterView?
     var backgroundView: UIView?
 
+    var registerViewModel: RegisterViewModel?
 
 
 
@@ -27,9 +30,9 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
         self.title = "注册"
         phoneNum = ""
         passWord = ""
-
+        self.registerViewModel = RegisterViewModel();
+        self.KVOHandler()
         self.initView()
-
         // Do any additional setup after loading the view.
     }
 
@@ -40,8 +43,6 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
 
         registerView = RegisterView(frame: CGRect(x: 0, y: 64, width: self.view.width, height: self.view.height))
         registerView?.delegate = self
-        registerView?.phoneNumTextField?.delegate = self
-        registerView?.passWordTextField?.delegate = self
 
         self.view.addSubview(backgroundView!)
         self.view.addSubview(registerView!)
@@ -49,6 +50,13 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
     }
 
     func tapBtnAction(button: UIButton) {
+        SVProgressHUD.show()
+        self.registerViewModel?.username = registerView?.phoneNumTextField?.text
+        self.registerViewModel?.password = registerView?.passWordTextField?.text
+        self.registerViewModel?.realName = registerView?.userNameTextField?.text
+        self.registerViewModel?.againPassword = registerView?.rePassWordTextField?.text
+        self.registerViewModel?.Register()
+        SVProgressHUD.dismiss()
 
 //        let user = User.mr_find(byAttribute: "phoneNum", withValue: phoneNum!)
 //        if user?.count == 0{
@@ -84,18 +92,42 @@ class RegisterViewController: UIViewController, registerViewDelegte, UITextField
     }
 
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    func KVOHandler(){
 
-        if textField.tag == 101{
+        kvoController.observe(registerViewModel, keyPath: "invalid", options: .new) { (viewController, viewModel, change) in
+            if (self.registerViewModel!.invalid?.boolValue)!{
 
-            phoneNum = textField.text
-
-        }else{
-
-            passWord = textField.text
+                SVProgressHUD.showError(withStatus: self.registerViewModel?.invalidMsg)
+                
+            }
             
         }
-        
+
+        kvoController.observe(registerViewModel, keyPath: "netFail", options: .new) { (viewController, viewModel, change) in
+            if (self.registerViewModel?.netFail?.boolValue)!{
+
+                SVProgressHUD.showError(withStatus: "请检查网络")
+
+            }
+        }
+
+        kvoController.observe(self.registerViewModel, keyPath: "registerSuccessOrFail", options: .new) { (viewController, viewModel, change) in
+            if (self.registerViewModel?.registerSuccessOrFail?.boolValue)!{
+
+                let loginVC = LoginViewController()
+                self.navigationController?.pushViewController(loginVC, animated: false)
+
+            }else{
+
+                SVProgressHUD.showError(withStatus: "密码错误")
+                
+            }
+        }
+
+
+
+
+
     }
 
 

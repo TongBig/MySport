@@ -58,6 +58,36 @@ class RegisterViewModel: NSObject {
             invalidMsg = "两次输入的密码不一致";
             return
         }
+        if username != nil && realName != nil && password != nil {
+            let param: NSMutableDictionary = [:]
+            param.setValue(username, forKey: "username")
+            param.setValue(password, forKey: "password")
+            param.setValue(username, forKey: "realname")
+            let _ = XDNetworking().postRequest(API_SIGNUP as NSString, refresh: true, cache: false, params: param, progressBlock: nil, successBlock: { (response) in
+                let responseDic = response as! NSDictionary
+                if responseDic.object(forKey: "success") != nil && String(format:"%@",responseDic.object(forKey: "success") as! CVarArg) == "0"{
+                    self.registerSuccessOrFail = NSNumber(value: false)
+                    self.invalidMsg = responseDic.object(forKey: "error") as? String;
+                }else {
+                    let user = UserModel(dic: response as! NSDictionary)
+                    CoreDataManger.manager.switchToDatabase(name: Utils().MD5(user.username!)!)
+                    UserDefaults.standard.set(user.uid, forKey: UID)
+                    UserDefaults.standard.set(responseDic["token"], forKey: TOKEN)
+                    let manager = UserStatusManager.manager
+                    manager.userModel = user
+                    manager.isLogin = true
+
+                    self.registerSuccessOrFail = NSNumber(value: true)
+                }
+
+            }, failBlock: { (error) in
+
+                self.netFail = NSNumber(value: true)
+                
+            })
+
+
+        }
     }
 
 }
